@@ -13,5 +13,10 @@ mongoose.connect('mongodb://localhost:27017/blog', { useNewUrlParser: true }).th
   err => { console.console.error("fail to open mongodb connection.");  }
 );
 
+app.get("/api/ping", (req, res) => {
+  console.log("Ping to the service.")
+  res.end("The service is up and running.");
+});
+
 //starting server
-app.listen(3000, () => console.log('server running on port 3000!'))
+app.listen(3000, () => console.log('Server running on port 3000!'));
