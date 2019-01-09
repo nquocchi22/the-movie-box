@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "the-movie-box-ui": {
+    "movie-box-ng-ui": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/the-movie-box-ui",
+            "outputPath": "dist/movie-box-ng-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "the-movie-box-ui:build"
+            "browserTarget": "movie-box-ng-ui:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "the-movie-box-ui:build:production"
+              "browserTarget": "movie-box-ng-ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "the-movie-box-ui:build"
+            "browserTarget": "movie-box-ng-ui:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "the-movie-box-ui-e2e": {
+    "movie-box-ng-ui-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "the-movie-box-ui:serve"
+            "devServerTarget": "movie-box-ng-ui:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "the-movie-box-ui:serve:production"
+              "devServerTarget": "movie-box-ng-ui:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "the-movie-box-ui"
+  "defaultProject": "movie-box-ng-ui"
 }
