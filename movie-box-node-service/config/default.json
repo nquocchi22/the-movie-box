@@ -1,0 +1,4 @@
+{
+    "DBHost": "mongodb://mongo/themoviebox",
+    "PORT": 27017
+}

@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 var user = require('./user/index');
-
+var dbconfig = require('./config/default.json');
 
 //setup for html parser
 app.use(bodyParser.json());
