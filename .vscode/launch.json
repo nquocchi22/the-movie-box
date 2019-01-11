@@ -5,16 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Movie Box Service",
             "type": "node",
             "request": "launch",
-            "name": "Launch Movie Box Service",
             "runtimeExecutable": "e:/DevX@Env/node-v10.15.0-win-x64/node",
             "program": "${workspaceFolder}/the-movie-box-service/index.js"
         },
         {
+            "name": "Launch Movie Box Website",
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Movie Box Website",
             "url": "http://localhost:4200",
             "webRoot": "${workspaceFolder}/the-movie-box-ui"
         }
