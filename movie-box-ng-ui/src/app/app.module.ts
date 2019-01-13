@@ -8,6 +8,7 @@ import { LoginComponent } from './shared/login/login.component';
 import { LogoutComponent } from './shared/logout/logout.component';
 import { SignupComponent } from './shared/signup/signup.component';
 import { SearchComponent } from './shared/search/search.component';
+import { RatingComponent } from './shared/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchComponent } from './shared/search/search.component';
     LoginComponent,
     LogoutComponent,
     SignupComponent,
-    SearchComponent
+    SearchComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

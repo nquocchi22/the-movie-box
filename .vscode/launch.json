@@ -9,14 +9,15 @@
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "e:/DevX@Env/node-v10.15.0-win-x64/node",
-            "program": "${workspaceFolder}/the-movie-box-service/index.js"
+            "program": "${workspaceFolder}/movie-box-node-service/index.js"
         },
         {
-            "name": "Launch Movie Box Website",
+            "name": "Launch Movie Box UI",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}/the-movie-box-ui"
+            "webRoot": "${workspaceFolder}/movie-box-ng-ui",
+            "preLaunchTask": "ng-start"
         }
     ]
 }
