@@ -16,8 +16,9 @@
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}/movie-box-ng-ui",
-            "preLaunchTask": "ng-start"
+            "cwd": "${workspaceFolder}/movie-box-ng-ui",
+            "preLaunchTask": "ng-movie-box-start"
         }
-    ]
+    ],
+    "compounds": []
 }

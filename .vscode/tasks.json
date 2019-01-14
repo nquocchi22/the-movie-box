@@ -3,9 +3,23 @@
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [{
-        "label": "ng-start",
+        "label": "ng-kill-port-4200",
         "type": "shell",
         "command": "ng-start.bat",
+        "options": {
+            "cwd": "${workspaceRoot}/scripts"
+        },
+        "isBackground": false,
+        "group": "test",
+    }, {
+        "label": "ng-movie-box-start",
+        "type": "shell",
+        "command": "ng",
+        "args": ["serve"],
+        "options": {
+            "cwd": "${workspaceRoot}/movie-box-ng-ui"
+        },
+        "dependsOn":["ng-kill-port-4200"],
         "presentation": {
             "echo": true,
             "reveal": "always",
@@ -15,7 +29,6 @@
             "clear": false
         },
         "isBackground": true,
-        "group": "test",
-        "problemMatcher": []
+        "group": "test"
     }]
 }
