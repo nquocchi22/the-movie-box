@@ -8,6 +8,7 @@
             "name": "Launch Movie Box Service",
             "type": "node",
             "request": "launch",
+            "cwd": "${workspaceFolder}/movie-box-node-service",
             "runtimeExecutable": "e:/DevX@Env/node-v10.15.0-win-x64/node",
             "program": "${workspaceFolder}/movie-box-node-service/index.js"
         },

@@ -13,6 +13,6 @@ cache:
     - node_modules
 deploy:
   provider: heroku
-  app: the-movie-box-service
+  app: node-service
   api_key:
     secure: c427b03f-663f-4ad2-9919-d870160f45cf
