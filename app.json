@@ -1,0 +1,16 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "the-movie-box",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
